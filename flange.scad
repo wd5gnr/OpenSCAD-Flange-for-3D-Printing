@@ -77,7 +77,7 @@ module part2()
     difference() 
     {
         part();
-       translate([-50,-50,-100]) cube([100,100,100]);
+       translate([-bigcutbox/2,-bigcutbox/2,-bigcutbox]) cube([bigcutbox,bigcutbox,bigcutbox]);
     }
 }
 
