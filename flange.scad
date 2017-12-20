@@ -37,10 +37,10 @@ module flange()
           cylinder(r=odr,flangeh);  // outside ring
           translate([0,0,-1]) cylinder(r=idr,h=flangeh+2);  // cut out inside
 // 4 bolt holes
-          translate([idr+(odr-idr)/2,0,-1]) cylinder(r=flangebolt,h=flangeh+2);
-          translate([0,idr+(odr-idr)/2,-1]) cylinder(r=flangebolt,h=flangeh+2);
-          translate([-(idr+(odr-idr)/2),0,-1]) cylinder(r=flangebolt,h=flangeh+2);
-          translate([0,-(idr+(odr-idr)/2),-1]) cylinder(r=flangebolt,h=flangeh+2);
+          translate([idr+(odr-idr)/2,0,-1]) cylinder(r=flangeboltr,h=flangeh+2);
+          translate([0,idr+(odr-idr)/2,-1]) cylinder(r=flangeboltr,h=flangeh+2);
+          translate([-(idr+(odr-idr)/2),0,-1]) cylinder(r=flangeboltr,h=flangeh+2);
+          translate([0,-(idr+(odr-idr)/2),-1]) cylinder(r=flangeboltr,h=flangeh+2);
 
       }
  // connectors
